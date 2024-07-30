@@ -7,5 +7,5 @@ if [ ! -f .sloop/libsloop.rlib ]; then
     echo $SOURCE | base64 -di | zcat > .sloop/sloop.rs
     rustc --crate-type lib .sloop/sloop.rs --out-dir .sloop
 fi
-rustc build.rs --edition=2018 --extern sloop=.sloop/libsloop.rlib --out-dir .sloop
+rustc build.rs --edition=2021 --extern sloop=.sloop/libsloop.rlib --out-dir .sloop
 .sloop/build
