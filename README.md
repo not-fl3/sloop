@@ -38,6 +38,21 @@ fn main() -> Result<(), ()> {
 }
 ```
 
+```bash
+> ls
+build.rs  deps/  src/ 
+
+> sloop
+Building libc
+Building miniquad
+Building TriangleOnTheSloop src/triangle.rs
+Done!
+
+> ls
+build.rs  deps/  src/  TriangleOnTheSloop*
+```
+Example from *miniquad_triangle*, [sloop-example-projects](https://github.com/not-fl3/sloop-example-projects/)
+
 `sloop` is a rust library, allowing to write build scripts in rust.
 
 # Motivation
