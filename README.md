@@ -8,6 +8,11 @@ _This is cargo. It can ship a lot of crates:_
 _This is sloop. It can barely ship very few crates:_
 ![](macroquad.rs/sloop.jpg)
 
+# Motivation
+
+`sloop` is an experiment on making a build system tailored for a handful of hand-picked, audited and well curated dependencies.
+
+# How it looks like 
 
 ```bash
 .
@@ -55,8 +60,3 @@ Example from *miniquad_triangle*, [sloop-example-projects](https://github.com/no
 
 `sloop` is a rust library, allowing to write build scripts in rust.
 
-# Motivation
-
-In cargo, `build.rs` is very powerful and very easy to make, while project specific cargo subcommands are super uncommon practice. Sloop is the opposite - it is super easy to make a project-specific build pipeline, but virtually impossible for a dependency to invoke a custom build script.
-
-Note that for now `sloop` is mostly an educational project with only one goal: show how `rustc` compile rust crates.
